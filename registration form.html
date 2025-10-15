@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    form {
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .gender {
+      margin-top: 5px;
+    }
+    .gender input {
+      margin-right: 5px;
+    }
+    .terms {
+      margin-top: 15px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form action="#" method="post">
+    <!-- Full Name -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <!-- Gender -->
+    <label>Gender:</label>
+    <div class="gender">
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male" style="display:inline;">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female" style="display:inline;">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other" style="display:inline;">Other</label>
+    </div>
+
+    <!-- City -->
+    <label for="city">City:</label>
+    <select id="city" name="city" required>
+      <option value="">-- Select your city --</option>
+      <option value="newyork">New York</option>
+      <option value="losangeles">Los Angeles</option>
+      <option value="chicago">Chicago</option>
+      <option value="houston">Houston</option>
+      <option value="miami">Miami</option>
+    </select>
+
+    <!-- Terms and Conditions -->
+    <div class="terms">
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms" style="display:inline;">I agree to the terms and conditions</label>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Register</button>
+  </form>
+
+</body>
+</html>
